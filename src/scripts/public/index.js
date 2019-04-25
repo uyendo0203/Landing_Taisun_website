@@ -165,3 +165,12 @@ $(document).ready(function() {
 
 });
 
+$(".popup").click(function () {
+  var $src = $(this).attr("data-url");
+  $(".show-image").fadeIn();
+  $(".img-show iframe").attr("src", $src);
+});
+
+$("span, .overlay").click(function () {
+  $(".show-image").fadeOut();
+});
