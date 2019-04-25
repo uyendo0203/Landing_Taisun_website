@@ -1,57 +1,150 @@
-.header {
-    position: fixed;
-    top: 50px; 
-    width: 100%;
-    left: 50%;
-    z-index: 2;
-    transform: translateX(-50%); 
-    @media (min-width: 768px) {
-        width: 750px;
-    }
-    @media (min-width: 992px) {
-        width: 970px;
-    }
-    @media (min-width: 1200px) {
-        width: 1170px;
-    }
-    @media (min-width: 1920px) {
-        width: 1320px;
-    }
-    @media (max-width:991px) {
-        top: 28px;
-    }
-    .logo {
-        position: absolute;
-        left: 0;
-        @media(max-width:768px) {
-            left: 40px;
-            max-width: 130px;
-            img{
-                width: 100%;
-            }
-        }
-    }
-    .right {
-        position: absolute;
-        top: 5px;
-        right: 0;
-        @media(max-width: 768px) {
+.header{
+    position: relative;
+    &__bg{
+        height: 130px;
+        position: relative;
+        overflow: hidden;
+        background-image: url('../assets/images/bg-header.png');
+        background-size: cover;
+        @media (max-width:1200px) {
+           height: 80px;
+        } 
+        img{
             width: 100%;
+        }
+    }
+    &__toggle-icon{
+        display: none;
+        position: absolute;
+        right: 15px;
+        top: 30px;
+        cursor: pointer;
+        z-index: 2;
+        @media (max-width:1200px) {
+           display: block
+         }
+        .fa{
+            font-size: 25px
+        }
+    }
+    &__content{
+        @media (min-width:1200px) {
+            .contain-global{
+                width: 1200px
+            }
+         }
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        top: 15px;
+        z-index: 1;
+        width: 100%;;
+        
+        @media (max-width:1200px) {
+            z-index: 2;
+            top: 0;
+            height: 0;
+        } 
+         
+        @media (max-width:992px) {
+           .contain-global{
+               width: 100%
+           }
+        } 
+    }
+
+    &__logo{
+        max-width: 225px;
+        margin-left: auto;
+        margin-right: auto;
+        @media (max-width:1200px) {
+           margin-left: 20px;
+           padding-top: 15px;
+           padding-bottom: 15px;
+           max-width: 150px;
+        } 
+        @media (max-width:768px) {
+            padding-top: 10px;
+        }
+        img{
+            width: 100%;
+        }
+    }
+    &__nav{
+        @media (max-width:1200px) {
             text-align: center;
-            top: 60px;
-            display: none;
-            &.active {
-                display: block
+            max-width: 100%;
+            margin: 0 auto;
+            box-shadow: 0px 1px 12px rgba(0, 0, 0, 0.3);
+            transform: translateY(-121%);
+            -moz-transform: translateY(-121%);
+            -o-transform: translateY(-121%);
+            -webkit-transform: translateY(-121%);
+            transition: all 0.5s;
+            &.active{
+                transform: none;
+                -moz-transform: none;
+                -o-transform: none;
+                -webkit-transform: none;
+            }
+        } 
+        ul{
+            background-color: #ffdc00;
+            border-radius: 30px;
+            padding-left:30px;
+            padding-right: 30px;
+            box-shadow: 0px 1px 12px rgba(0, 0, 0, 0.3);
+            @media (max-width:1200px) {
+                background-color: transparent;
+                border-radius: 0;
+                padding-left:0;
+                padding-right: 0;
+                box-shadow: none;
+                float: none;
+                margin-bottom: 0
+            }
+            li{
+                display: inline;
+                a{
+                    color:#7c5723;
+                    font-size: 18px;
+                    font-family: 'Gotham-Book';
+                    padding: 15px 20px;
+                    display: inline-block;
+                    @media (max-width:1200px) {
+                        padding: 15px 5px;
+                        display: block;
+                        background-color: #ffd88c;
+                        color: #25205f;
+                    }
+                }
+            }
+            &:nth-child(2){
+                padding-left:15px;
+                padding-right: 15px;
+                @media (max-width:1200px) {
+                    padding-left:0;
+                    padding-right: 0;
+                }
+                li{
+                    a{
+                        padding: 15px 10px;
+                        @media (max-width:1200px) {
+                            padding: 15px 5px;
+                        }
+                    }
+                }
             }
         }
-    }
-    .icon-mobile {
-        display: none;
-        @media(max-width:768px) {
-            display: block;
-            right: 40px;
-            position: absolute;
-            cursor: pointer;
+        &--left{
+            float: left;
+        }
+        &--right{
+            float: right;
         }
     }
+
 }
