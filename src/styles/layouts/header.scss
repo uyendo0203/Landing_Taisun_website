@@ -28,6 +28,11 @@
         }
     }
     &__content{
+        @media (min-width:992px) {
+            .contain-global{
+                width: 100%
+            }
+         }
         @media (min-width:1200px) {
             .contain-global{
                 width: 1200px
