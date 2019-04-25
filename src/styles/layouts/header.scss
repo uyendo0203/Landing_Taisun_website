@@ -37,7 +37,19 @@
             .contain-global{
                 width: 1200px
             }
-         }
+        }
+
+        @media (min-width:1500px) {
+            .contain-global{
+                width: 1400px;
+            }
+        }
+        @media (min-width: 1600px) {
+            
+            .contain-global{
+                width: 1520px;
+            }
+        }
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
