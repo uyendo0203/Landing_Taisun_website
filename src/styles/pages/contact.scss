@@ -1,0 +1,150 @@
+.contact{
+    
+    &__title{
+        font-size: 42px;
+        font-family: 'iCielMijas';
+        color:#9d773d;
+        position: relative;
+        display: inline-block;
+        margin-bottom: 40px;
+        margin-top: 40px;
+        .heart{
+            position: absolute;
+            &-1{
+                top: -2px;
+                right: -30px;   
+            }
+            @media (max-width:768px) {
+                top: 0;
+                right: -15px;
+                max-width: 28px;
+            } 
+        }
+    }
+    &__content{
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 100px;
+        padding: 0 20px 0 20px;
+        @media (min-width:1200px) {
+            width: 1150px;
+        } 
+        @media (min-width: 1600px) {
+            width: 1520px;
+        }
+    }
+
+    &__info{
+        &--select{
+            select{
+                height: 70px;
+                max-width: 560px;
+                width: 100%;
+                border: 1px solid #9d773d;
+                color:#9d773d;
+                border-radius:8px;
+                font-family: 'Gotham-Medium';
+                font-size: 16pt;
+                padding-left: 25px;
+                cursor: pointer;
+                outline: none;
+                display: block;
+
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                text-indent: 1px;
+                text-overflow: '';
+                background-image: url('../assets/images/button-select.jpg');
+                background-repeat: no-repeat;
+                background-position: calc(100% - 20px);
+                margin-bottom: 25px;
+                @media (max-width:768px) {
+                    max-width: 100%;
+                } 
+                &:last-child{
+                    margin-bottom: 0
+                }
+            }
+        }
+        &--store{
+            margin-top: 35px;
+            
+            border: 1px solid #9d773d;
+            border-radius:8px;
+            padding: 8px;
+            .list-store{
+                overflow-y: scroll;
+                height: 545px;
+               
+                &::-webkit-scrollbar-track{
+                    background-color: #9d773d;
+                    border-radius: 6px;
+                }
+
+                &::-webkit-scrollbar{
+                    width: 30px;
+                    background-color: #9d773d;
+                    border-radius: 6px;
+                    @media(max-width:992px) {
+                        width: 15px;
+                    }
+                    @media(max-width:768px) {
+                        width: 10px;
+                    }
+                }
+
+                &::-webkit-scrollbar-thumb{
+                    background-color: #fff;
+                    border: 1px solid transparent;
+                    border-radius: 6px;
+                    background-clip: content-box;
+                }
+                @media(max-width:992px) {
+                    padding-left: 0;
+                    padding-right: 30px;
+                }
+                ul{
+                    padding-left: 23px;
+                    li{
+                        font-size: 18px;
+                        font-family: 'Gotham-Book';
+                    }
+                }
+                .store-detail{
+                    color: #9d773d;
+                    padding-top: 40px;
+                    padding-bottom: 30px;
+                    position: relative;
+                    &::before{
+                        position: absolute;
+                        content: '';
+                        height: 1px;
+                        max-width: 270px;
+                        width: 100%;
+                        background-color: #9d773d;
+                        bottom: 0
+                    }
+                    .name{
+                        font-size: 18pt;
+                        font-family: 'Gotham-Medium';
+                    }
+                    .address{
+                        font-size: 18px;
+                        font-style: italic;
+                        font-family: 'Gotham-Light';
+                    }
+                }
+            }
+        }
+    }
+
+    .section1{
+        &::before{
+            top: -50px;
+        }
+        &::after{
+            bottom: -150px;
+        }
+    }
+}

@@ -1,0 +1,55 @@
+.promotion{
+
+
+
+
+
+
+
+    .slick-dots{
+        @media(max-width: 768px){
+            bottom: 0;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            -moz-transform: translateX(-50%);
+            -o-transform: translateX(-50%);
+            -webkit-transform: translateX(-50%);
+        }
+    }
+
+    .slick-prev, .slick-next{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        -webkit-transform: translateY(-50%)
+    }
+    
+    .slick-prev{
+        left: 130px;
+    }
+    .slick-next{
+        right: 130px;
+    }
+        
+    .slick-arrow{
+        background-color: #7c5723;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border:none;
+        outline: none;
+        cursor: pointer;
+        z-index: 2;
+        &:hover{
+            box-shadow: 0px 1px 12px rgba(0, 0, 0, 0.3);
+        }
+        img{
+            max-width: 17px;
+            width: 100%;
+            margin-right: 2px;
+        }
+    }
+}

@@ -1,4 +1,30 @@
+/*fonts with class*/
+.font-medium {
+    font-family: 'Gotham-Medium';
+}
 
+.font-light {
+    font-family: 'Gotham-Light';
+}
+
+.font-black {
+    font-family: 'Gotham-Black';
+}
+.font-book {
+    font-family: 'Gotham-Book';
+}
+.font-icielMijas {
+    font-family: 'iCielMijas';
+}
+.font-iCielSmoothy-Cursive {
+    font-family: 'iCielSmoothy-Cursive';
+}
+
+
+
+/*
+	path for fonts
+*/
 @font-face {
     font-family: 'Gotham-Medium';
     src: url('../assets/fonts/gotham/Gotham-Medium/Gotham-Medium.eot?#iefix') format('embedded-opentype'),  

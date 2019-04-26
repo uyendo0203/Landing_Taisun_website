@@ -27,6 +27,47 @@
 }
 
 
+
+/*animate animateCloud-rotate */
+$rotate : 8deg;
+
+@-webkit-keyframes animateCloud-rotate {
+    0% {
+        transform: rotate(0);
+    }
+    50% {
+        transform: rotate($rotate);
+    }
+    100% {
+        transform: rotate(0);
+    }
+}
+
+@-moz-keyframes animateCloud-rotate {
+    0% {
+        transform: rotate(0);
+    }
+    50% {
+        transform: rotate($rotate);
+    }
+    100% {
+        transform: rotate(0);
+    }
+}
+
+@keyframes animateCloud-rotate {
+    0% {
+        transform: rotate(0);
+    }
+    50% {
+        transform: rotate($rotate);
+    }
+    100% {
+        transform: rotate(0);
+    }
+}
+
+
 /* ANIMATIONS */
 
 .cloud {

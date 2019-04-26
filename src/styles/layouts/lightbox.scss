@@ -1,0 +1,68 @@
+// popup
+
+.popup {
+    margin: auto;
+    text-align: center; 
+}
+  
+.popup img {
+    cursor: pointer; 
+}
+  
+.show-image {
+    z-index: 999;
+    display: none; 
+}
+
+.show-image .overlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.66);
+    position: fixed;
+    top: 0;
+    z-index: 5;
+    left: 0; 
+}
+  
+.show-image .img-show {
+    max-width: 100%;
+    width: 900px;
+    height: 600px;
+    max-width: 90%;
+    position: fixed;
+    top: 50%;
+    z-index: 6;
+    left: 50%;
+    padding: 15px;
+    background-color: #fff;
+    transform: translate(-50%, -50%);
+}
+.show-image .img-show iframe {
+    width: 100%;
+    height: 100%; }
+
+.img-show span{
+    cursor: pointer;
+    position: absolute;
+    background: #fff;
+    border: 1px solid #000;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    font-size: 20px;
+    border-radius: 50%;
+    right: -20px;
+    top: -20px;
+}
+  
+.img-show img {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%); 
+    -moz-transform: translateY(-50%); 
+    -o-transform: translateY(-50%); 
+    -webkit-transform: translateY(-50%); 
+}

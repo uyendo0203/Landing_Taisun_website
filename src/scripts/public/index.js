@@ -113,6 +113,32 @@ $('.slider4').not('.slick-initialized').slick({
         },
     ]
 })
+$('.slider-promotion').not('.slick-initialized').slick({
+    dots: false,
+    autoplay:true,
+    arrows:true,
+    infinite: false,
+    speed: 300,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    prevArrow: "<button type='button' class='slick-prev pull-left'><img src='./assets/images/arrow-1.png' ></button>",
+    nextArrow: "<button type='button' class='slick-next pull-right'><img src='./assets/images/arrow-2.png'></button>",
+    responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            infinite: true,
+            arrows:false,
+            dots: true
+          }
+        },
+    ]
+})
+
+
+
 
 $('.header__toggle-icon').click(function(e){
     e.stopPropagation()
