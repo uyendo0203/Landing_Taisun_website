@@ -1,0 +1,41 @@
+/*animate animateCloud-left */
+@-webkit-keyframes animateCloud-left {
+    0% {
+		left: 0;
+    }
+    100% {
+        left: 100%;
+    }
+}
+
+@-moz-keyframes animateCloud-left {
+    0% {
+        left: 0;
+    }
+    100% {
+        left: 100%;
+    }
+}
+
+@keyframes animateCloud-left {
+    0% {
+		left: 0;
+    }
+    100% {
+        left: 100%;
+    }
+}
+
+
+/* ANIMATIONS */
+
+.cloud {
+	-webkit-animation: animateCloud-left 5s linear infinite;
+	-moz-animation: animateCloud-left 5s linear infinite;
+	animation: animateCloud-left 5s linear infinite;
+	
+	-webkit-transform: scale(0.65);
+	-moz-transform: scale(0.65);
+	transform: scale(0.65);
+}
+
