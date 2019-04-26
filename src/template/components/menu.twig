@@ -1,0 +1,146 @@
+
+<style>
+    /* Layouts */
+    body{
+        width:auto
+    }
+    .c-wrapper {
+        margin: 0 auto;
+        max-width: 1200px;
+    }
+
+    .c-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 1em;
+    }
+
+    @media (min-width: 768px) {
+        .c-section {
+            flex-direction: row;
+            margin-top: 3em;
+        }
+    }
+
+    .c-section--first {
+        margin-top: 2em;
+    }
+
+    .c-section__content {
+        width: 100%;
+    }
+
+    @media (min-width: 768px) {
+        .c-section__content {
+            width: 60%;
+        }
+    }
+
+    .c-section__img {
+        display: none;
+        padding-top: 0;
+        width: 35%;
+    }
+
+    @media (min-width: 768px) {
+        .c-section__img {
+            display: block;
+        }
+    }
+
+    .c-section__img img {
+        max-width: 100%;
+    }
+
+    /* Header */
+    .c-page-title {
+        margin: 0;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+  
+
+    .c-intro {
+        color: #4d4d4d;
+        margin: 0 1em 1em 0;
+        line-height: 1.8;
+    }
+
+    /* Headings */
+    .c-heading {
+        border-bottom: 5px solid #ecbb42;
+        display: inline-block;
+        font-weight: normal;
+        margin: 0 0 1em 0;
+        padding-bottom: 0.25em;
+    }
+
+    /* Lists */
+    .c-list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .c-list li {
+        margin-bottom: 0.5em;
+        padding-left: 1em;
+        position: relative;
+        list-style: none
+    }
+
+    .c-list li:before {
+        background: #ecbb42;
+        content: '';
+        display: block;
+        height: 0.5em;
+        left: 0;
+        position: absolute;
+        top: 0.5em;
+        width: 0.5em;
+    }
+
+    /* Pages list */
+    .c-page {
+        text-decoration: none;
+        position: relative;
+        display: block;
+        border-bottom: 1px dashed #ccc;
+        padding-bottom: 0.5em;
+        color: #b08b31;
+        font-size: 16px;
+    }
+
+</style>
+
+<div class="container c-wrapper">
+    <div class="row">
+        <h1 class="c-page-title"><b>Unidry Pages</b></h1>
+    </div>
+    <div class="row c-section__content">
+        <div class="col-md-12">
+            <div class="pages__menu">
+                <ul  class="c-list">
+                    <li>
+                        <a class="c-page" target="_blank" href="./trangchu.html">Trang Chủ</a>
+                    </li>
+                    <li>
+                        <a class="c-page" target="_blank" href="./sanpham.html">Sản phẩm</a>
+                    </li>
+                    <li>
+                        <a class="c-page" target="_blank" href="./chitietsanpham.html">Chi tiết sản phẩm</a>
+                    </li>
+                    <li>
+                        <a class="c-page" target="_blank" href="./khuyenmai.html">Khuyến mãi</a>
+                    </li>
+                    <li>
+                        <a class="c-page" target="_blank" href="./lienhe.html">Liên hệ</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
