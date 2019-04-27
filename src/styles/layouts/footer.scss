@@ -45,5 +45,12 @@
 }
 
 .footer--1{
-    background-color: #ffd88c
+    background-color: #ffd88c;
+    background-image: url('../assets/images/footer-bg.jpg');
+    background-size: 100% 100%;
+    @media(max-width: 992px){
+        background-position-x:center ;
+        background-size: cover;
+    }
+
 }

@@ -1,5 +1,17 @@
 .header{
     position: relative;
+    &__icon{
+        position: absolute;
+        right: 120px;
+        z-index: 2;
+        top: calc(100% + 50px);
+        @media (max-width:1200px) {
+            right: 15px;
+        } 
+        @media (max-width:992px) {
+            top: calc(100% + 10px);
+        } 
+    }
     &__bg{
         height: 130px;
         position: relative;

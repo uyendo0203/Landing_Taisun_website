@@ -1,8 +1,12 @@
+/** 
+ Slick slider-------------------------------------------
+*/
+
 $('.slider1').not('.slick-initialized').slick({
     dots: false,
     arrows:false,
     infinite: false,
-    // autoplay:true,
+    autoplay:true,
     speed: 300,
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -136,8 +140,45 @@ $('.slider-promotion').not('.slick-initialized').slick({
         },
     ]
 })
+$('.slider-promotion-1').not('.slick-initialized').slick({
+    dots: false,
+    autoplay:true,
+    arrows:true,
+    infinite: false,
+    speed: 300,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    prevArrow: "<button type='button' class='slick-prev pull-left'><img src='./assets/images/arrow-1.png' ></button>",
+    nextArrow: "<button type='button' class='slick-next pull-right'><img src='./assets/images/arrow-2.png'></button>",
+    responsive: [
+        {
+          breakpoint: 992,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            infinite: true,
+            arrows:false,
+            dots: true
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            infinite: true,
+            arrows:false,
+            dots: true
+          }
+        },
+    ]
+})
 
 
+
+/** 
+ header-------------------------------------------
+*/
 
 
 $('.header__toggle-icon').click(function(e){
@@ -151,8 +192,12 @@ $(document).click(function(e){
 })
 
 
-$(document).ready(function() {
 
+/** 
+start rating -------------------------------------------
+*/
+
+$(document).ready(function() {
   /* 1. Visualizing things on Hover - See next part for action on click */
   $('#stars li').on('mouseover', function() {
       var onStar = parseInt($(this).data('value'), 10); // The star currently mouse on
@@ -187,9 +232,12 @@ $(document).ready(function() {
       }
 
   });
-
-
 });
+
+/** 
+ Popup vidio-------------------------------------------
+*/
+
 
 $(".popup").click(function () {
   var $src = $(this).attr("data-url");
@@ -199,4 +247,5 @@ $(".popup").click(function () {
 
 $("span, .overlay").click(function () {
   $(".show-image").fadeOut();
+  $(".img-show iframe").attr("src", '');
 });
