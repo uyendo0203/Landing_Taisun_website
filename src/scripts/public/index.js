@@ -174,7 +174,57 @@ $('.slider-promotion-1').not('.slick-initialized').slick({
     ]
 })
 
+$('.slider-product-detail--for').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  fade: true,
+  autoplay:true,
+  asNavFor: '.slider-product-detail--nav'
+});
+$('.slider-product-detail--nav').slick({
+  slidesToShow: 3,
+  arrows: false,
+  slidesToScroll: 1,
+  asNavFor: '.slider-product-detail--for',
+  dots: false,
+  autoplay:true,
+});
 
+
+$('.slider-award').not('.slick-initialized').slick({
+  dots: false,
+  autoplay:true,
+  arrows:true,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  prevArrow: "<button type='button' class='slick-prev pull-left'><img src='./assets/images/arrow-1.png' ></button>",
+  nextArrow: "<button type='button' class='slick-next pull-right'><img src='./assets/images/arrow-2.png'></button>",
+  responsive: [
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          infinite: true,
+          arrows:false,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+          arrows:false,
+          dots: true
+        }
+      },
+  ]
+})
 
 /** 
  header-------------------------------------------
@@ -249,3 +299,17 @@ $("span, .overlay").click(function () {
   $(".show-image").fadeOut();
   $(".img-show iframe").attr("src", '');
 });
+
+
+
+/** 
+ * Product dettail page
+ * 
+*/
+
+$('.product-detail__list-function .image-hover').on('mouseover', function(){
+  $(this).closest('.image').find('.text-hover').css('display','table')
+})
+$('.product-detail__list-function .image-hover').on('mouseout', function(){
+  $(this).closest('.image').find('.text-hover').css('display','none')
+})
