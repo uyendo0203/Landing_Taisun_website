@@ -319,9 +319,9 @@
                  text-align: left;
                  display: block
             }
-            @media(max-width: 390px){
-                font-size: 35pt;
-             }
+            // @media(max-width: 390px){
+            //     font-size: 35pt;
+            //  }
         }
         &-2{
             font-size: 8pt;
@@ -545,6 +545,20 @@
                     -o-transform: translateX(-50%);
                     -webkit-transform: translateX(-50%);
                     bottom: 14px;
+                    @media(max-width: 600px){
+                        padding: 5px 0;
+                        width: 95px;
+                        font-size: 9pt;
+                        bottom: 8px;
+                    }
+                    @media(max-width: 350px){
+                        padding: 3px 0;
+                        width: 85px;
+                        font-size: 6pt;
+                        bottom: 8px;
+                    }
+
+                    
                 }
             }
         }
