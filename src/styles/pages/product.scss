@@ -24,9 +24,9 @@
                     @media(max-width:900px){
                         display: inline-block;
                     }
-                    @media(max-width:480px){
-                        font-size: 30pt;
-                    }
+                    @media (max-width:768px) {
+                        font-size:25pt;
+                    } 
                     .heart{
                         max-width: 40px;
                         @media(max-width:768px){

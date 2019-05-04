@@ -64,6 +64,12 @@
                     color: #ec038d;
                     font-family: 'iCielMijas';
                     position: relative;
+                    @media (max-width:1200px) {
+                        font-size:45pt;
+                    } 
+                    @media (max-width:768px) {
+                        font-size:25pt;
+                    } 
                     .heart{
                         position: absolute;
                         top: -5px;
@@ -74,12 +80,7 @@
                             max-width: 28px;
                         } 
                     }
-                    @media (max-width:1200px) {
-                        font-size:45pt;
-                    } 
-                    @media (max-width:480px) {
-                        font-size:25pt;
-                    } 
+                    
                 }
                 &-2{
                     font-size: 24pt;
@@ -91,9 +92,11 @@
                         font-size: 15pt;
                         padding-left: 0
                     }
-                    @media(max-width: 480px){
+                    @media(max-width: 768px){
+                        margin-top: -7px
+                    }
+                    @media(max-width: 390px){
                         font-size: 10pt;
-                        margin-top: -10px
                     }
                 }
                 span{

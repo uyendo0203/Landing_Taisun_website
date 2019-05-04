@@ -22,16 +22,14 @@
         }
     }
     &__content{
-        max-width: 100%;
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 100px;
         padding: 0 20px 0 20px;
-        @media (min-width:1200px) {
-            width: 1150px;
-        } 
-        @media (min-width: 1600px) {
-            width: 1520px;
+        max-width: 78.125vw;
+        @media(max-width: 992px){
+            max-width: 100%;
+            margin-bottom: 65px;
         }
     }
 
@@ -145,6 +143,9 @@
         }
         &::after{
             bottom: -150px;
+            @media(max-width: 992px){
+                bottom: -110px;
+            }
         }
     }
 }

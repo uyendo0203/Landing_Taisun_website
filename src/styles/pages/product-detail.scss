@@ -2,6 +2,10 @@
     padding-top: 100px;
     padding-bottom: 120px;
     position: relative;
+    @media(max-width:992px){
+        padding-top: 70px;
+        padding-bottom: 65px;
+    }
     &::after{
         content:'';
         position: absolute;
@@ -17,10 +21,13 @@
         padding-right: 15px;
     }
     &__content{
-        max-width: 1500px;
+        max-width: 78.125vw;
         width: 100%;
         margin-left: auto;
         margin-right: auto;
+        @media(max-width: 992px){
+            max-width: 100%;
+        }
     }
     &__info{
         float: right;
@@ -198,15 +205,26 @@
         }
         &__table-size{
             // max-width: 400px;
-           
+            position: relative;
+            overflow: hidden;
+            border-radius: 5px;
+            border: 1px solid #7c5723;
             table{
                 width: 100%;
                 overflow: hidden;
                 border-radius: 5px;
                 td, th{
-                    border:1px solid #7c5723;
+                    border-bottom:1px solid #7c5723;
                     text-align: center;
-                   
+                    &:first-child{
+                        border-right:1px solid #7c5723;
+                    }
+                }
+                tr:last-child{
+                    
+                    td{
+                        border-bottom:none;
+                    }
                 }
                 th{
                     background-color: #7c5723;
@@ -278,7 +296,12 @@
                 display: table-cell;
                 vertical-align: bottom;
                 @media(max-width: 768px){
-                    // height: 300px;
+                    padding-left: 10px;
+                    padding-right: 10px;
+                }
+                @media(max-width:480px){
+                    padding-left: 5px;
+                    padding-right: 5px;
                 }
                 
                 .content{
@@ -292,6 +315,9 @@
                     // -webkit-transform: translateX(-50%);
                     max-width: 125px;
                     width: 100%;
+                    @media(max-width: 768px){
+                        max-width: 100%;
+                    }
                 }
     
                 .title{
