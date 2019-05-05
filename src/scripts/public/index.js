@@ -238,7 +238,10 @@ $('.header__toggle-icon').click(function(e){
 
 $(document).click(function(e){
    
-    $('.header__nav').removeClass('active')
+    $('.header__nav').removeClass('active');
+
+    // $('.write-evaluate--content').removeClass('active')
+    // $('.write-question--content').removeClass('active')
 })
 
 
@@ -313,3 +316,39 @@ $('.product-detail__list-function .image-hover').on('mouseover', function(){
 $('.product-detail__list-function .image-hover').on('mouseout', function(){
   $(this).closest('.image').find('.text-hover').css('display','none')
 })
+
+
+// click danh gia
+
+$('.write-evaluate').click(function(e){
+  
+  $('.write-evaluate--content').toggleClass('active');
+  if($('.write-evaluate--content').hasClass('active')){
+    $('.write-question--content').removeClass('active')
+  }
+  // e.stopPropagation();
+  
+})
+
+$('.write-question').click(function(e){
+  $('.write-question--content').toggleClass('active');
+  if($('.write-question--content').hasClass('active')){
+    $('.write-evaluate--content').removeClass('active')
+  }
+  // e.stopPropagation();
+})
+
+$('.hover-product').on('mouseover', function() {
+  $('.header__nav--product').css('opacity','1')
+
+}).on('mouseout', function() {
+  $('.header__nav--product').css('opacity','0')
+});
+
+
+$('.header__nav--product').on('mouseover', function() {
+  $(this).css('opacity','1')
+
+}).on('mouseout', function() {
+  $(this).css('opacity','0')
+});

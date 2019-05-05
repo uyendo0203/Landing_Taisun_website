@@ -119,8 +119,11 @@
                 -moz-transform: none;
                 -o-transform: none;
                 -webkit-transform: none;
+
+                
             }
         } 
+        
         ul{
             background-color: #ffdc00;
             border-radius: 30px;
@@ -153,6 +156,39 @@
                 }
             }
             &:nth-child(2){
+                background-color: #fff;
+                border-radius: 0 0 20px 20px;
+                position: absolute;
+                bottom: -120px;
+                padding-left: 13px;
+                z-index: 1;
+                padding-right: 13px;
+                padding-top: 36px;
+                opacity: 0;
+                transition: all .5s;
+                li{
+                    position: relative;
+                    &::before{
+                        position: absolute;
+                        height:35px;
+                        width: 1px;
+                        content: '';
+                        background-color:  #7c5723;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        -moz-transform: translateY(-50%);
+                        -o-transform: translateY(-50%);
+                        -webkit-transform: translateY(-50%);
+                    }
+                    &:first-child{
+                        &::before{
+                            position: static;
+                           
+                        }
+                    }
+                }
+            }
+            &:nth-child(3){
                 padding-left:15px;
                 padding-right: 15px;
                 @media (max-width:1200px) {
@@ -169,11 +205,25 @@
                 }
             }
         }
+
+        
+
         &--left{
             float: left;
+            position: relative;
+            z-index: 2;
         }
         &--right{
             float: right;
+        }
+    }
+    .hover-product{
+        cursor: pointer;
+        .fa{
+            display: none;
+            @media(max-width: 1200px){
+                display: inline
+            }
         }
     }
 
