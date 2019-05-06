@@ -233,15 +233,22 @@ $('.slider-award').not('.slick-initialized').slick({
 
 $('.header__toggle-icon').click(function(e){
     e.stopPropagation()
-    $('.header__nav').toggleClass('active')
+
+    $(this).toggleClass('active')
+    $('.header__nav').toggleClass('active');
+    $('.header__content').toggleClass('active');
 })
 
 $(document).click(function(e){
    
     $('.header__nav').removeClass('active');
 
-    // $('.write-evaluate--content').removeClass('active')
-    // $('.write-question--content').removeClass('active')
+    $('.write-evaluate--content').removeClass('active')
+    $('.write-question--content').removeClass('active');
+
+    $('.header__nav--product').removeClass('active')
+    $('.hover-product').removeClass('active')
+    $('.header__toggle-icon').removeClass('active')
 })
 
 
@@ -318,37 +325,40 @@ $('.product-detail__list-function .image-hover').on('mouseout', function(){
 })
 
 
-// click danh gia
+/**
+ * click danh gia and comment
+ *  
+ */
 
 $('.write-evaluate').click(function(e){
-  
+  e.stopPropagation();
   $('.write-evaluate--content').toggleClass('active');
   if($('.write-evaluate--content').hasClass('active')){
     $('.write-question--content').removeClass('active')
-  }
-  // e.stopPropagation();
-  
+  }  
 })
 
 $('.write-question').click(function(e){
+  e.stopPropagation();
   $('.write-question--content').toggleClass('active');
   if($('.write-question--content').hasClass('active')){
     $('.write-evaluate--content').removeClass('active')
   }
-  // e.stopPropagation();
 })
 
-$('.hover-product').on('mouseover', function() {
-  $('.header__nav--product').css('opacity','1')
 
-}).on('mouseout', function() {
-  $('.header__nav--product').css('opacity','0')
+$(".write-evaluate--content").click(function(e){
+  e.stopPropagation();
+});
+$(".write-question--content").click(function(e){
+  e.stopPropagation();
 });
 
+/** end */
 
-$('.header__nav--product').on('mouseover', function() {
-  $(this).css('opacity','1')
 
-}).on('mouseout', function() {
-  $(this).css('opacity','0')
-});
+$('.hover-product').click(function(e){
+  e.stopPropagation();
+  $('.header__nav--product').toggleClass('active')
+  $(this).toggleClass('active')
+})
