@@ -58,6 +58,10 @@
     &__menu-tabs{
         text-align: center;
         padding-top: 45px;
+        @media(max-width: 992px){
+            padding-left: 20px;
+            padding-right: 20px;
+        }
         ul{
             padding: 0;
             padding: 0;
