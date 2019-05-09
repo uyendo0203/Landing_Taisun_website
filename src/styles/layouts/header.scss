@@ -121,18 +121,16 @@
         margin-left: auto;
         margin-right: auto;
         padding-top: 30px;
+        @media (max-width:1600px) {
+            max-width: 180px;
+        }
         @media (max-width:1200px) {
            margin-left: 20px;
            padding-top: 15px;
            padding-bottom: 15px;
-           max-width: 150px;
+           max-width: 135px;
         } 
-        @media (max-width:1600px) {
-            max-width: 180px;
-        }
-        @media (max-width:768px) {
-            padding-top: 10px;
-        }
+        
         img{
             width: 100%;
         }
@@ -158,6 +156,9 @@
                 -o-transform: translateX(0);
                 -webkit-transform: translateX(0);
             }
+        } 
+        @media (max-width:400px) {
+            width: 70%;
         } 
         
         &--item{
