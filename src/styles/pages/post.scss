@@ -186,6 +186,12 @@
             margin-top: 85px;
             float: left;
             width: 50%;
+            &:hover{
+                .post__other--image{
+                    box-shadow: 0 10px 15px -10px rgba(0, 0, 0, 0.8);
+                }
+                    
+            }
             @media(max-width: 1200px){
                 margin-top: 50px;
             }
@@ -214,6 +220,8 @@
         &--image{
             max-width: 215px;
             border:1px solid #7d5825;
+            transition: all 0.2s;
+            
             @media(max-width: 600px){
                 margin-left: auto;
                 margin-right: auto

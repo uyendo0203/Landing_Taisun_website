@@ -115,7 +115,24 @@
             }
         }
     }
-
+    &__headings{
+        font-style: italic;
+        font-size: 14pt;
+        font-family: 'Gotham-Book';
+        max-width: 40%;
+        color: #7d5825;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 25px;
+        @media(max-width: 1200px){
+            max-width: 60%;
+        }
+        @media(max-width: 768px){
+            max-width: 80%;
+            padding-top: 0
+        }
+    }
     &__content{
         padding-left: 120px;
         padding-right: 120px;
