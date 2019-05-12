@@ -290,6 +290,8 @@ $(document).ready(function() {
       for (i = 0; i < onStar; i++) {
           $(stars[i]).addClass('selected');
       }
+      var ratingValue = parseInt($('#stars li.selected').last().data('value'), 10);
+      console.log(ratingValue)
 
   });
 });
