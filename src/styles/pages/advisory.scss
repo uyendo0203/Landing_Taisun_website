@@ -134,6 +134,15 @@
                     font-size: 12pt;
                     font-family: 'Gotham-Medium';
                     outline: none;
+
+                    position: relative;
+                    -webkit-appearance: none;
+                    -moz-appearance: none;
+                    text-indent: 1px;
+                    text-overflow: '';
+                    background-image: url('../assets/images/button-select-1.png');
+                    background-repeat: no-repeat;
+                    background-position: calc(100% - 20px);
                 }
             }
         }
@@ -322,4 +331,97 @@
         }
 
     }
+}
+
+.sendQuestions{
+    .modal-content{
+        box-shadow: 0px 1px 12px rgba(0, 0, 0, 0.3);
+        border-radius: 25px;
+        border:1px solid #7c5723;
+        padding: 0;
+    }
+    .modal-body{
+        padding: 0
+    }
+
+    .answers{
+        padding: 40px 60px;
+        @media(max-width:992px) {
+            padding: 20px;
+        }
+        &__item{
+            border-bottom: 1px solid #d7ccbd;
+            padding-bottom: 50px;
+            padding-top: 35px;
+            @media(max-width:992px) {
+                padding-bottom: 20px;
+                padding-top: 20px;
+            }
+            &:first-child{
+                border-top: none;
+                padding-top: 0;
+            }
+            &:last-child{
+                border-bottom: none;
+            }
+            .avatar{
+                width: 85px;
+                height: 85px;
+                border-radius:50%;
+                overflow: hidden;
+                float: left;
+                @media(max-width:600px) {
+                    width: 40px;
+                    height: 40px;
+                }
+                img{
+                    width: 100%;
+                }
+            }
+            .content{
+                width: calc(100% - 100px);
+                float: right;
+                @media(max-width:600px) {
+                    width: calc(100% - 50px);
+                }
+                .title{
+                    font-size: 12pt;
+                    color:#7c5723;
+                    font-family: 'Gotham-Bold';
+                }
+                .des{
+                    font-size: 12pt;
+                    color:#7c5723;
+                    font-family: 'Gotham-Book';
+                    margin-top: 3px;
+                }
+                .author{
+                    margin-top: 12px;
+                    .name{
+                        font-size: 12pt;
+                        font-family: 'Gotham-Book';
+                        color: #f0328c
+                    }
+                    .time{
+                        font-size: 12pt;
+                        color:#7c5723;
+                        font-family: 'Gotham-Book';
+                    }
+                }
+            }
+        }
+    }
+
+    @media (min-width: 768px){
+        .modal-dialog {
+            width: 600px;
+            margin: 10% auto;
+        }
+    }
+    @media (min-width: 992px){
+        .modal-dialog {
+            width: 840px;
+        }
+    }
+        
 }
