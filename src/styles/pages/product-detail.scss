@@ -240,6 +240,14 @@
             font-size: 20pt;
             font-family: 'Gotham-Bold';
             color:#7c5723;
+            text-transform: uppercase;
+        }
+        &__price{
+            font-size: 12pt;
+            font-family: 'Gotham-Book';
+            text-transform: uppercase;
+            color:#7c5723;
+            font-style: italic;
             margin-bottom: 18px;
         }
         &__des{
@@ -818,6 +826,31 @@
                     @media (max-width: 992px){
                         max-width:  100%;
                     }
+                }
+            }
+
+            .input-group{
+                input{
+                    width: 40px;
+                    border: none;
+                    border-radius: inherit;
+                    background: transparent;
+                    text-align: center;
+                    height: 30px;
+                    color: #7d5825;
+                    padding: 0;
+                    font-size: 20px;
+                }
+                .addon{
+                    border: none;
+                    background: #e1e1e1;
+                    height: 30px;
+                    width: 30px;
+                    text-align: center;
+                    line-height: 30px;
+                    border-radius: 9px;
+                    display: inline-block;
+                    cursor: pointer;
                 }
             }
             .button-send{

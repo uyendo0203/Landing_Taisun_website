@@ -13,7 +13,7 @@
                             <option value="" selected>Chọn chuyên mục</option>
                         </select>
                     </div>
-                    <div class="advisory__submit search">Tìm kiếm</div>
+                    <div class="advisory__submit search"  data-toggle="modal" data-target="#popup_thanks">Tìm kiếm</div>
                 </div>
                 <div class="selectbox--right">
                     <div class="title">Đặt câu hỏi của riêng mẹ</div>
@@ -175,6 +175,21 @@
 </div>
 
 <!-- Modal -->
+<div class="modal fade popup_thanks" id="popup_thanks" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="thanks__content">
+                    <p class="text">Cảm ơn các bạn đã dành thời gian cho Taisun. 
+                            Chúng tôi sẽ cố gắng để mang tới sản phẩm tốt hơn nữa.
+                    </p>
+                    <button data-dismiss="modal" class="button">Đóng</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 <div class="modal fade sendQuestions" id="sendQuestions" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">

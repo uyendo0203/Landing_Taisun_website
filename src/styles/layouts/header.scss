@@ -195,10 +195,6 @@
                     font-family: 'Gotham-Book';
                     padding: 15px 20px;
                     display: inline-block;
-                    // @media (max-width:1350px) {
-                    //     padding: 15px 10px;
-                         
-                    // }
                     @media (max-width:1200px) {
                         padding: 15px 5px;
                         display: block;
@@ -296,6 +292,19 @@
             z-index: 2;
             @media (max-width:1200px) {
                 width: 100%;
+            }
+            ul{
+                li{
+                    a{
+                        @media (max-width:1325px) {
+                            padding: 15px 5px;
+                            text-align: left;
+                        }
+                        @media (max-width:1200px) {
+                            padding-left: 30px;
+                        }
+                    }
+                }
             }
         }
         &--right{
