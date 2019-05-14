@@ -89,7 +89,12 @@
                     .image-hover{
                         display: inline-block;
                         cursor: pointer;
-                        
+                        width: 63px;
+                        height: 63px;
+                        border-radius: 50%;
+                        img{
+                            width: 100%;
+                        }
                     }
                 }
                 .text{
