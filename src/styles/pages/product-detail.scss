@@ -171,6 +171,11 @@
                 cursor: pointer;
                 outline: none;
                 margin:0 20px;
+                &:hover{
+                    .image{
+                        transform: scale(1.05)
+                    }
+                }
                 img{
                     width: 100%
                 }
@@ -306,6 +311,7 @@
                 width: 44%;
                 float: left;
                 text-align: center;
+                
                 @media(max-width:361px){
                     width: 42%;
                 }
@@ -375,6 +381,11 @@
                     // -webkit-transform: translateX(-50%);
                     max-width: 125px;
                     width: 100%;
+                    &:hover{
+                        .img{
+                            transform: scale(1.05)
+                        }
+                    }
                     @media(max-width: 992px){
                         margin-left: auto;
                         margin-right: auto
