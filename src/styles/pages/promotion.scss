@@ -1,5 +1,6 @@
 .promotion{
     .section1__slider{
+        margin-top: 20px;
         .slick-prev{
             left: -20px;
         }
@@ -10,9 +11,16 @@
             bottom: -30px
         }
         .item{
-            height: 550px;
-            @media(max-width: 768px){
-                height: 445px;
+            // height:100%;
+            // @media(max-width: 768px){
+            //     min-height: 445px;
+            // }
+            table{
+                height: 100%;
+                width: 100%;
+                td{
+                    vertical-align: bottom
+                }
             }
             .title{
                 font-style: italic;
@@ -23,6 +31,8 @@
             }
             .content{
                 max-width: 400px;
+                margin-left: auto;
+                margin-right: auto;
             }
             
         }

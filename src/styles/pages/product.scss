@@ -1,10 +1,21 @@
 .product{
     .banner{
         &__slider{
+
+            &.slider2{
+                table{
+                    height: 100%;
+                    width: 100%;
+                    td{
+                        vertical-align: bottom
+                    }
+                }
+            }
             .item{
                 background-image: url('../assets/images/banner-product-no-cloud.jpg');
                 background-size: cover;
                 height: 800px;
+                
             }
             .title{
                 position: absolute;

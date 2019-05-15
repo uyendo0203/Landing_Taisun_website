@@ -15,7 +15,7 @@ $('.slider2').not('.slick-initialized').slick({
   dots: false,
   arrows: true,
   infinite: false,
-  autoplay: true,
+  autoplay: false,
   speed: 300,
   slidesToShow: 4,
   slidesToScroll: 1,
@@ -142,7 +142,7 @@ $('.slider-promotion').not('.slick-initialized').slick({
 })
 $('.slider-promotion-1').not('.slick-initialized').slick({
   dots: false,
-  autoplay: true,
+  autoplay: false,
   arrows: true,
   infinite: false,
   speed: 300,
@@ -238,7 +238,7 @@ $('.header__toggle-icon').click(function (e) {
   $('.header__nav').toggleClass('active');
   $('.header__content').toggleClass('active');
 
-  if($(window).width() < 1200){
+  if ($(window).width() < 1200) {
     $('.header__nav--product').addClass('active')
   }
 
@@ -299,7 +299,34 @@ $(document).ready(function () {
     console.log(ratingValue)
 
   });
+
+
+
+/**set height max for items */
+  var maxHeight = 0;
+
+  $(".slider2 .item").each(function () {
+    if ($(this).height() > maxHeight) {
+      maxHeight = $(this).height();
+    }
+  });
+
+  $(".slider2 .item").height(maxHeight + 60);
+
+  var maxHeight1 = 0;
+  $(".slider-promotion-1 .item").each(function () {
+    console.log('1',maxHeight1)
+    console.log('2',$(this).height())
+    if ($(this).height() > maxHeight1) {
+      maxHeight1 = $(this).height();
+    }
+  });
+  console.log('max',maxHeight1)
+  $(".slider-promotion-1 .item").height(maxHeight1 + 20);
+
+
 });
+
 
 /** 
  Popup vidio-------------------------------------------
@@ -386,7 +413,7 @@ $('.addon').click(function () {
 
   if (attr == 'plus') {
     amount++;
-    
+
   } else {
     amount--;
   }
@@ -396,7 +423,11 @@ $('.addon').click(function () {
     amount = 1;
   }
 
-  $('.amount').attr('value',amount);
-  
-  
+  $('.amount').attr('value', amount);
+
+
 })
+
+
+
+
