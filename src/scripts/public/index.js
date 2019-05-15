@@ -237,6 +237,11 @@ $('.header__toggle-icon').click(function (e) {
   $(this).toggleClass('active')
   $('.header__nav').toggleClass('active');
   $('.header__content').toggleClass('active');
+
+  if($(window).width() < 1200){
+    $('.header__nav--product').addClass('active')
+  }
+
 })
 
 $(document).click(function (e) {
@@ -358,11 +363,16 @@ $(".write-question--content").click(function (e) {
 
 /** end */
 
-
-$('.hover-product').click(function (e) {
+/**hover on menu "san pham" */
+$('.hover-product').mouseover(function (e) {
   e.stopPropagation();
-  $('.header__nav--product').toggleClass('active')
-  $(this).toggleClass('active')
+  $('.header__nav--product').addClass('active')
+  $(this).addClass('active');
+})
+$('.header__nav--product').mouseleave(function (e) {
+  e.stopPropagation();
+  $('.hover-product').removeClass('active')
+  $(this).removeClass('active');
 })
 
 

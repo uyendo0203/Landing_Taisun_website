@@ -301,6 +301,7 @@
                             text-align: left;
                         }
                         @media (max-width:1200px) {
+                            padding: 8px 5px;
                             padding-left: 30px;
                         }
                     }
@@ -316,7 +317,7 @@
                 a{
                     padding: 15px 10px;
                     @media (max-width:1200px) {
-                        padding: 15px 5px;
+                        padding: 8px 5px;
                         text-align: left;
                         padding-left: 30px;
                     }
@@ -333,7 +334,8 @@
         }
         .fa{
             display: inline-block;
-            transition: all 0.2s
+            transition: all 0.2s;
+            display: none
         }
     }
 
