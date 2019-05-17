@@ -66,19 +66,54 @@ $rotate : 10deg;
         transform: rotate(0);
     }
 }
+@-webkit-keyframes animateCloud-hover {
+    0% {
+        transform: scale(1,1);
+    }
+    50% {
+        transform: scale(1.2,1.2);
+    }
+    100% {
+        transform: scale(1,1);
+    }
+}
+
+@-moz-keyframes animateCloud-hover {
+    0% {
+        transform: scale(1,1);
+    }
+    50% {
+        transform: scale(1.2,1.2);
+    }
+    100% {
+        transform: scale(1,1);
+    }
+}
+
+@keyframes animateCloud-hover {
+    0% {
+        transform: scale(1,1);
+    }
+    50% {
+        transform: scale(1.2,1.2);
+    }
+    100% {
+        transform: scale(1,1);
+    }
+}
 
 
 /* ANIMATIONS */
 
-.cloud {
-	-webkit-animation: animateCloud-left 5s linear infinite;
-	-moz-animation: animateCloud-left 5s linear infinite;
-	animation: animateCloud-left 5s linear infinite;
+// .cloud {
+// 	-webkit-animation: animateCloud-left 5s linear infinite;
+// 	-moz-animation: animateCloud-left 5s linear infinite;
+// 	animation: animateCloud-left 5s linear infinite;
 	
-	-webkit-transform: scale(0.65);
-	-moz-transform: scale(0.65);
-	transform: scale(0.65);
-}
+// 	-webkit-transform: scale(0.65);
+// 	-moz-transform: scale(0.65);
+// 	transform: scale(0.65);
+// }
 .cloud-1, .cloud-2,.cloud-3 {
 	-webkit-animation: animateCloud-rotate 0.6  s linear infinite;
 	-moz-animation: animateCloud-rotate 0.6 s linear infinite;
@@ -113,7 +148,8 @@ $rotate : 10deg;
 
 /*Time to finalise the cloud shape*/
 .cloud {
-	width: 200px; height: 60px;
+	width: 200px; 
+	height: 60px;
 	background: #fff;
 	
 	border-radius: 200px;
@@ -146,9 +182,9 @@ $rotate : 10deg;
 
 /*Time to animate*/
 .x1 {
-	-webkit-animation: moveclouds 15s linear infinite;
-	-moz-animation: moveclouds 15s linear infinite;
-	-o-animation: moveclouds 15s linear infinite;
+	// -webkit-animation: moveclouds 15s linear infinite;
+	// -moz-animation: moveclouds 15s linear infinite;
+	// -o-animation: moveclouds 15s linear infinite;
 }
 
 /*variable speed, opacity, and position of clouds for realistic effect*/
@@ -158,13 +194,18 @@ $rotate : 10deg;
 	-webkit-transform: scale(0.6);
 	-moz-transform: scale(0.6);
 	transform: scale(0.6);
-	opacity: 0.6; /*opacity proportional to the size*/
+	opacity: 0.6; 
+	/*opacity proportional to the size*/
 	
 	/*Speed will also be proportional to the size and opacity*/
 	/*More the speed. Less the time in 's' = seconds*/
 	-webkit-animation: moveclouds 25s linear infinite;
 	-moz-animation: moveclouds 25s linear infinite;
 	-o-animation: moveclouds 25s linear infinite;
+
+	// -webkit-animation: animateCloud-rotate 0.6s linear infinite;
+	// -moz-animation: animateCloud-rotate 0.6s linear infinite;
+	// animation: animateCloud-rotate 0.6s linear infinite;
 }
 
 .x3 {
