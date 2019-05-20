@@ -116,9 +116,16 @@
                 font-size: 16px;
                 font-family: 'Gotham-Bold';
                 color: #7c5723;
-                padding-left: 40px;
-                padding-right: 40px;
+                // padding-left: 40px;
+                // padding-right: 40px;
+                text-align: center;
                 height: 65px;
+                display: table;
+                width: 100%;
+                span{
+                    display: table-cell;
+                    vertical-align: middle
+                }
                 @media(max-width: 768px){
                     height: auto;
                 }
