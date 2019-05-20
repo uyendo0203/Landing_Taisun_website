@@ -429,5 +429,5 @@ $('.addon').click(function () {
 })
 
 
-
+/**append html for animation footer */
 

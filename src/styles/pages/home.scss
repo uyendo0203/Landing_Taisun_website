@@ -45,16 +45,23 @@
                     -moz-transform: rotate(-97deg);
                     -o-transform: rotate(-97deg);
                     -webkit-transform: rotate(-97deg);
+                    @media(max-width: 768px){
+                        right: auto;
+                        left: -25px;
+                        max-width: 20px;
+                        top: 0
+                    }
                 }
                 &-2{
                     top: -40px;
                     right: -50px;
+                    @media (max-width:768px) {
+                        top: -10px;
+                        right: -33px;
+                        max-width: 22px;
+                    } 
                 }
-                @media (max-width:768px) {
-                    top: 0;
-                    right: -15px;
-                    max-width: 28px;
-                } 
+                
             }
             @media(max-width: 390px){
                 font-size: 35pt;
@@ -237,23 +244,30 @@
             .heart{
                 position: absolute;
                 &-1{
-                    top: -30px;
-                    left: -52px;
-                    transform: rotate(-90deg);
-                    -moz-transform: rotate(-90deg);
-                    -o-transform: rotate(-90deg);
-                    -webkit-transform: rotate(-90deg);
+                    top: 16px;
+                    left: -24px;
+                    max-width: 20px;
+                    transform: rotate(-97deg);
+                    -moz-transform: rotate(-97deg);
+                    -o-transform: rotate(-97deg);
+                    -webkit-transform: rotate(-97deg);
+                    @media(max-width: 768px){
+                        right: auto;
+                        left: -25px;
+                        max-width: 20px;
+                        top: 0
+                    }
                 }
                 &-2{
-                    top: 15px;
-                    right: -27px;
-                    width: 20px;
+                    top: -40px;
+                    right: -50px;
+                    @media (max-width:768px) {
+                        top: -10px;
+                        right: -33px;
+                        max-width: 22px;
+                    } 
                 }
-                @media (max-width:768px) {
-                    top: 0;
-                    right: -15px;
-                    max-width: 28px;
-                } 
+                
             }
             
         }
@@ -484,23 +498,30 @@
             .heart{
                 position: absolute;
                 &-1{
-                    top: -30px;
-                    left: -52px;
-                    transform: rotate(-90deg);
-                    -moz-transform: rotate(-90deg);
-                    -o-transform: rotate(-90deg);
-                    -webkit-transform: rotate(-90deg);
+                    top: 16px;
+                    left: -24px;
+                    max-width: 20px;
+                    transform: rotate(-97deg);
+                    -moz-transform: rotate(-97deg);
+                    -o-transform: rotate(-97deg);
+                    -webkit-transform: rotate(-97deg);
+                    @media(max-width: 768px){
+                        right: auto;
+                        left: -25px;
+                        max-width: 20px;
+                        top: 0
+                    }
                 }
                 &-2{
-                    top: 15px;
-                    right: -27px;
-                    width: 20px;
+                    top: -40px;
+                    right: -50px;
+                    @media (max-width:768px) {
+                        top: -10px;
+                        right: -33px;
+                        max-width: 22px;
+                    } 
                 }
-                @media (max-width:768px) {
-                    top: 0;
-                    right: -15px;
-                    max-width: 28px;
-                } 
+                
             }
             
         }
