@@ -2,23 +2,42 @@
 
 
 /* ANIMATIONS */
-
-// .cloud {
-// 	-webkit-animation: animateCloud-left 5s linear infinite;
-// 	-moz-animation: animateCloud-left 5s linear infinite;
-// 	animation: animateCloud-left 5s linear infinite;
-	
-// 	-webkit-transform: scale(0.65);
-// 	-moz-transform: scale(0.65);
-// 	transform: scale(0.65);
-// }
-
-.cloud-1, .cloud-2,.cloud-3 {
-	-webkit-animation: animateCloud-rotate 0.6  s linear infinite;
-	-moz-animation: animateCloud-rotate 0.6 s linear infinite;
-	animation: animateCloud-rotate 0.6  s linear infinite;
-	
+@-webkit-keyframes animateCloud-hover {
+    0% {
+        transform: scale(1,1);
+    }
+    50% {
+        transform: scale(1.2,1.2);
+    }
+    100% {
+        transform: scale(1,1);
+    }
 }
+
+@-moz-keyframes animateCloud-hover {
+    0% {
+        transform: scale(1,1);
+    }
+    50% {
+        transform: scale(1.2,1.2);
+    }
+    100% {
+        transform: scale(1,1);
+    }
+}
+
+@keyframes animateCloud-hover {
+    0% {
+        transform: scale(1,1);
+    }
+    50% {
+        transform: scale(1.2,1.2);
+    }
+    100% {
+        transform: scale(1,1);
+    }
+}
+
 
 /*animate for heart 2*/
 @keyframes heart_2 {
@@ -80,8 +99,13 @@
 }
 
 
-/**asdfasdfasdfasdf**/
-
+/**cloud**/
+.cloud-1, .cloud-2,.cloud-3 {
+	-webkit-animation: animateCloud-rotate 0.6  s linear infinite;
+	-moz-animation: animateCloud-rotate 0.6 s linear infinite;
+	animation: animateCloud-rotate 0.6  s linear infinite;
+	
+}
 #clouds{
     position: absolute;
     z-index: 2;
@@ -142,17 +166,11 @@
 	-moz-transform: scale(0.6);
 	transform: scale(0.6);
 	opacity: 0.6; 
-	/*opacity proportional to the size*/
-	
-	/*Speed will also be proportional to the size and opacity*/
-	/*More the speed. Less the time in 's' = seconds*/
+
 	-webkit-animation: moveclouds 25s linear infinite;
 	-moz-animation: moveclouds 25s linear infinite;
 	-o-animation: moveclouds 25s linear infinite;
 
-	// -webkit-animation: animateCloud-rotate 0.6s linear infinite;
-	// -moz-animation: animateCloud-rotate 0.6s linear infinite;
-	// animation: animateCloud-rotate 0.6s linear infinite;
 }
 
 .x3 {
