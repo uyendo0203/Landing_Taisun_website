@@ -3,7 +3,8 @@
     &__title{
         font-size: 42px;
         font-family: 'iCielMijas';
-        color:#9d773d;
+        // color:#9d773d;
+        color: #ec038d;
         position: relative;
         display: inline-block;
         margin-bottom: 40px;
@@ -13,6 +14,7 @@
             &-1{
                 top: -2px;
                 right: -30px;   
+                max-width: 30px;
             }
             @media (max-width:768px) {
                 top: 0;
@@ -161,7 +163,8 @@
 
     .section1{
         &::before{
-            top: -50px;
+            // top: -50px;
+            top: -48px;
         }
         &::after{
             bottom: -150px;

@@ -256,6 +256,11 @@ $(document).click(function (e) {
 	$('.header__toggle-icon').removeClass('active')
 })
 
+// $(document).mouseover(function (e) {
+// 	$('.header__nav--product').removeClass('active')
+// 	$('.hover-product').removeClass('active')
+// })
+
 
 
 /** 
@@ -311,8 +316,10 @@ $(document).ready(function () {
 
 	setTimeout(function () {
 		$(".slider2 .item").height(maxHeight + 60);
-	}, 1000)
+	}, 1000);
 
+
+	/**----------------------------------------------- */
 	var maxHeight1 = 0;
 	$(".slider-promotion-1 .item").each(function () {
 		if ($(this).height() > maxHeight1) {
@@ -324,11 +331,24 @@ $(document).ready(function () {
 		$(".slider-promotion-1 .item").height(maxHeight1 + 20);
 	}, 1000)
 
+	/**----------------------------------------------- */
+	var maxHeight3 = 0;
+
+	$(".product .slider2 .item").each(function () {
+		if ($(this).height() > maxHeight) {
+			maxHeight3 = $(this).height();
+		}
+	});
+
+	setTimeout(function () {
+		$(".product .slider2 .item").height(maxHeight + 60);
+	}, 1000)
+
 });
 
 
 /** 
- Popup vidio-------------------------------------------
+ Popup video-------------------------------------------
 */
 
 
@@ -399,6 +419,10 @@ $('.header__nav--product').mouseleave(function (e) {
 	e.stopPropagation();
 	$('.hover-product').removeClass('active')
 	$(this).removeClass('active');
+})
+$('.header__bg').mouseover(function (e) {
+	$('.hover-product').removeClass('active')
+	$('.header__nav--product').removeClass('active');
 })
 
 
