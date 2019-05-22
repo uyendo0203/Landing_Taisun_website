@@ -1,5 +1,5 @@
 .contact{
-    
+   
     &__title{
         font-size: 42px;
         font-family: 'iCielMijas';
@@ -27,6 +27,8 @@
         margin-bottom: 100px;
         padding: 0 20px 0 20px;
         max-width: 78.125vw;
+        text-align: center;
+        
         @media(max-width: 992px){
             max-width: 100%;
             margin-bottom: 65px;
@@ -34,6 +36,13 @@
     }
 
     &__info{
+        text-align: left;
+        max-width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        @media(max-width: 992px){
+            max-width: 100%;
+        }
         &--select{
             select{
                 height: 60px;
@@ -49,6 +58,9 @@
                 outline: none;
                 display: block;
 
+                margin-left: auto;
+                margin-right: auto;
+
                 -webkit-appearance: none;
                 -moz-appearance: none;
                 text-indent: 1px;
@@ -56,6 +68,9 @@
                 background-repeat: no-repeat;
                 background-position: calc(100% - 20px);
                 margin-bottom: 15px;
+                @media(max-width: 992px){
+                   height: 50px;;
+                }
                 @media (max-width:768px) {
                     max-width: 100%;
                 } 
@@ -70,6 +85,8 @@
             border: 1px solid #9d773d;
             border-radius:8px;
             padding: 8px;
+            margin-left: auto;
+            margin-right: auto;
             .list-store{
                 overflow-y: scroll;
                 height: 545px;
@@ -125,11 +142,17 @@
                     .name{
                         font-size: 20px;
                         font-family: 'Gotham-Medium';
+                         @media(max-width: 992px){
+                            font-size: 18px;
+                        }
                     }
                     .address{
                         font-size: 16px;
                         font-style: italic;
                         font-family: 'Gotham-Light';
+                         @media(max-width: 992px){
+                            font-size: 14px;
+                        }
                     }
                 }
             }
