@@ -399,7 +399,14 @@
                         max-width: 100%;
                     }
                 }
-    
+                .new-title{
+                    font-style: italic;
+                    font-size: 8pt;
+                    font-family: 'Gotham-Bold';
+                    background: transparent;
+                    color: #7c5723;
+                    text-align: center;
+                }
                 .title{
                     background-color: #ffdc00;
                     border-radius: 30px;
@@ -408,7 +415,10 @@
                     font-family: 'Gotham-Bold';
                     color: #7c5723;
                 }
-               
+                .btn-buynow{
+                    margin-top: 0;
+                    margin-bottom: 0
+                }
                 .img{
                     max-width: 100%;
                     margin: 0 auto;
