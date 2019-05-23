@@ -355,29 +355,92 @@
         }
     }
     &__related-left{
+        max-width: 70%;
+        margin-right: auto;
+        @media(max-width: 1200px){
+            margin-left: auto
+        }
+        @media(max-width: 992px){
+            max-width: 100%;
+        }
         &__title{}
     }
     .related-left{
         &__content{
             text-align: center;
             width: 100%;
-            display: table;
-            margin-top: 40px;
-            max-width:90%;
-            // margin-left: auto;
+            margin-top: 20px;
             margin-right: auto;
-            @media(max-width: 1500px){
-                max-width: 100%;
+            .content{
+                // max-width: 200px;
+                max-width: 150px;
+                width: 100%;
+                margin: 0 auto;
+                padding-bottom: 20px;
+                &:hover{
+                    .img{
+                        transform: scale(1.05)
+                    }
+                }
+                @media(max-width: 992px){
+                    margin-left: auto;
+                    margin-right: auto
+                }
+                @media(max-width: 768px){
+                    max-width: 100%;
+                }
             }
-            @media(max-width: 992px){
-                margin-left: auto;
+            .new-title{
+                font-style: italic;
+                font-size: 8pt;
+                font-family: 'Gotham-Bold';
+                background: transparent;
+                color: #7c5723;
+                text-align: center;
+            }
+            .title{
+                background-color: #ffdc00;
+                border-radius: 30px;
+                padding: 4px 2px;
+                font-size: 8pt;
+                font-family: 'Gotham-Bold';
+                color: #7c5723;
+            }
+            .btn-buynow{
+                margin-top: 0;
+                margin-bottom: 0;
+                span{
+                    font-size: 8pt;
+                    padding: 5px 0
+                }
+            }
+            .img{
                 max-width: 100%;
+                margin: 0 auto;
+                img{
+                    width: 100%;
+                    @media(max-width: 768px){
+                        width: 60%;
+                        max-width: 160px;
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+                }
+            }
+            .slide-related{
+                table{
+                    height: 100%;
+                    width: 100%;
+                    td{
+                        vertical-align: bottom
+                    }
+                }
             }
             .item{
                 padding-left: 20px;
                 padding-right: 20px;
-                display: table-cell;
-                vertical-align: bottom;
+                // display: table-cell;
+                // vertical-align: bottom;
                 @media(max-width: 768px){
                     padding-left: 10px;
                     padding-right: 10px;
@@ -386,69 +449,6 @@
                     padding-left: 5px;
                     padding-right: 5px;
                 }
-                
-                .content{
-                    // position: absolute;
-                    // bottom: 0;
-                    // text-align: center;
-                    // left: 50%;
-                    // transform: translateX(-50%);
-                    // -moz-transform: translateX(-50%);
-                    // -o-transform: translateX(-50%);
-                    // -webkit-transform: translateX(-50%);
-                    max-width: 200px;
-                    width: 100%;
-                    &:hover{
-                        .img{
-                            transform: scale(1.05)
-                        }
-                    }
-                    @media(max-width: 992px){
-                        margin-left: auto;
-                        margin-right: auto
-                    }
-                    @media(max-width: 768px){
-                        max-width: 100%;
-                    }
-                }
-                .new-title{
-                    font-style: italic;
-                    font-size: 8pt;
-                    font-family: 'Gotham-Bold';
-                    background: transparent;
-                    color: #7c5723;
-                    text-align: center;
-                }
-                .title{
-                    background-color: #ffdc00;
-                    border-radius: 30px;
-                    padding: 4px 2px;
-                    font-size: 8pt;
-                    font-family: 'Gotham-Bold';
-                    color: #7c5723;
-                }
-                .btn-buynow{
-                    margin-top: 0;
-                    margin-bottom: 0;
-                    span{
-                        font-size: 8pt;
-                        padding: 5px 0
-                    }
-                }
-                .img{
-                    max-width: 100%;
-                    margin: 0 auto;
-                    img{
-                        width: 100%;
-                        @media(max-width: 768px){
-                            width: 60%;
-                            max-width: 160px;
-                            margin-left: auto;
-                            margin-right: auto;
-                        }
-                    }
-                }
-    
             }
         }
     }
@@ -546,8 +546,8 @@
         width: 100%;
         margin-top: 30px;
         text-align: center;
-        max-width: 90%;
-        margin-right: auto;
+        // max-width: 90%;
+        // margin-right: auto;
         @media(max-width: 1500px){
             max-width: 100%;
         }

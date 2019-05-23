@@ -1,4 +1,9 @@
-
+.slick-slider{
+    .slick-slide{
+        outline: none;
+        cursor: pointer;
+    }
+}
 .slick-dots{
     padding: 0;
     text-align: center;

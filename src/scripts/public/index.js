@@ -11,6 +11,15 @@ $('.slider1').not('.slick-initialized').slick({
 	slidesToShow: 1,
 	slidesToScroll: 1,
 })
+$('.related-left__content').not('.slick-initialized').slick({
+	dots: false,
+	arrows: false,
+	infinite: false,
+	autoplay: true,
+	speed: 300,
+	slidesToShow: 2,
+	slidesToScroll: 1,
+})
 $('.slider2').not('.slick-initialized').slick({
 	dots: false,
 	arrows: true,
@@ -335,13 +344,26 @@ $(document).ready(function () {
 	var maxHeight3 = 0;
 
 	$(".product .slider2 .item").each(function () {
-		if ($(this).height() > maxHeight) {
+		if ($(this).height() > maxHeight3) {
 			maxHeight3 = $(this).height();
 		}
 	});
 
 	setTimeout(function () {
-		$(".product .slider2 .item").height(maxHeight + 60);
+		$(".product .slider2 .item").height(maxHeight3 + 60);
+	}, 1000)
+
+	/**----------------------------------------------- */
+	var maxHeight4 = 0;
+
+	$(".product-detail .related-left__content .slide-related").each(function () {
+		if ($(this).height() > maxHeight4) {
+			maxHeight4 = $(this).height();
+		}
+	});
+
+	setTimeout(function () {
+		$(".product-detail .related-left__content .slide-related").height(maxHeight4);
 	}, 1000)
 
 });
@@ -455,7 +477,6 @@ $('.addon').click(function () {
 $(window).on('scroll', function() {
 	
 	var temp = $(this).scrollTop();
-	console.log( temp );
 
 	if(temp > 260){
 		$('.header').addClass('active-scroll')
