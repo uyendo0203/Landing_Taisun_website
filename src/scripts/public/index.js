@@ -183,22 +183,26 @@ $('.slider-promotion-1').not('.slick-initialized').slick({
 	]
 })
 
+
 $('.slider-product-detail--for').slick({
 	slidesToShow: 1,
 	slidesToScroll: 1,
 	arrows: false,
 	fade: true,
-	autoplay: true,
-	asNavFor: '.slider-product-detail--nav'
-});
-$('.slider-product-detail--nav').slick({
+	autoplay:true,
+	asNavFor: '.slider-product-detail--nav',
+	infinite: true
+  });
+  $('.slider-product-detail--nav').slick({
 	slidesToShow: 3,
-	arrows: false,
 	slidesToScroll: 1,
 	asNavFor: '.slider-product-detail--for',
 	dots: false,
-	autoplay: true,
-});
+	arrows: false,
+	autoplay:true,
+	infinite: true
+  });
+
 
 
 $('.slider-award').not('.slick-initialized').slick({
