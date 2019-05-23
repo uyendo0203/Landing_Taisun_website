@@ -447,31 +447,22 @@
             margin: 10% auto;
         }
     }
+
+    
     @media (min-width: 992px){
         .modal-dialog {
             width: 840px;
+            margin: 100px auto
         }
+    }
+    .modal-dialog {
+        margin-top: 70px;
     }
         
 }
 
 .popup_thanks{
     text-align: center;
-    @media (min-width: 992px){
-        .modal-dialog {
-            width: 780px;
-            margin: 100px auto
-        }
-    }
-    .modal-content{
-        box-shadow: 0px 1px 12px rgba(0, 0, 0, 0.3);
-        border-radius: 25px;
-        border:1px solid #7c5723;
-        padding: 0;
-    }
-    .modal-body{
-        padding: 0
-    }
     .thanks__content{
         max-width: 610px;
         margin: 0 auto;
@@ -505,21 +496,6 @@
 }
 .sendQuestionsInfo{
     
-    @media (min-width: 992px){
-        .modal-dialog {
-            width: 570px;
-            margin: 100px auto
-        }
-    }
-    .modal-content{
-        box-shadow: 0px 1px 12px rgba(0, 0, 0, 0.3);
-        border-radius: 25px;
-        border:1px solid #7c5723;
-        padding: 0;
-    }
-    .modal-body{
-        padding: 0
-    }
     .info{
         form{
             padding: 35px; 

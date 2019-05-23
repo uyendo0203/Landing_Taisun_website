@@ -215,3 +215,22 @@
         
     }
 }
+
+.modal{
+    margin: 70px auto;
+    @media (min-width: 992px){
+        .modal-dialog {
+            width: 570px;
+            margin: 100px auto
+        }
+    }
+    .modal-content{
+        box-shadow: 0px 1px 12px rgba(0, 0, 0, 0.3);
+        border-radius: 25px;
+        border:1px solid #7c5723;
+        padding: 0;
+    }
+    .modal-body{
+        padding: 0
+    }
+}

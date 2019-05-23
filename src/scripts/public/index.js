@@ -452,5 +452,14 @@ $('.addon').click(function () {
 })
 
 
-/**append html for animation footer */
+$(window).on('scroll', function() {
+	
+	var temp = $(this).scrollTop();
+	console.log( temp );
 
+	if(temp > 260){
+		$('.header').addClass('active-scroll')
+	}else{
+		$('.header').removeClass('active-scroll')
+	}
+});

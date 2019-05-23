@@ -1,6 +1,12 @@
 .header{
-    position: relative;
+    // position: relative;
+    // box-shadow: 0px 1px 12px rgba(0, 0, 0, 0.3);
+
+    position: fixed;
     box-shadow: 0px 1px 12px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    top: 0;
+    z-index: 99;
     @media (max-width:1200px) {
         height: 80px;
      } 
@@ -8,6 +14,25 @@
     .contain-global{
         height: auto;
     }
+    &.active-scroll{
+         .header__bg {
+            height: 90px;
+            @media (max-width:1200px) {
+                height: 80px;
+            }
+        }
+        .header__content{
+            top: 60px
+        }
+        .header__logo {
+            max-width: 120px;
+            padding-top: 10px;
+            @media (max-width:1200px) {
+                padding-top: 15px;
+            }
+        }
+    }
+
     &__icon{
         position: absolute;
         right: 120px;
@@ -21,6 +46,7 @@
         } 
     }
     &__bg{
+        transition: all 0.3s;
         height: 130px;
         position: relative;
         overflow: hidden;
@@ -103,6 +129,7 @@
         top: 100px;
         z-index: 1;
         width: 100%;;
+        transition: all 0.3s;
         
         @media (max-width:1200px) {
             position: static;
@@ -121,6 +148,7 @@
         margin-left: auto;
         margin-right: auto;
         padding-top: 30px;
+        transition: all 0.3s;
         @media (max-width:1600px) {
             max-width: 180px;
         }
@@ -415,4 +443,11 @@
         }
     }
 
+}
+
+.space{
+    height: 130px;
+    @media(max-width: 1200px){
+        height: 80px;
+    }
 }
