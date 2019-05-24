@@ -11,15 +11,36 @@ $('.slider1').not('.slick-initialized').slick({
 	slidesToShow: 1,
 	slidesToScroll: 1,
 })
+
+
+var isInfiniteRelated = true;
+var isAutoPlayRelated = true;
+var numberItemOnSlideRelated = $('.related-left__content .slide-related').length;
+var numberItemConfigRelated = 2;
+
+if (numberItemOnSlideRelated <= numberItemConfigRelated) {
+	isAutoPlayRelated = false
+}
+
 $('.related-left__content').not('.slick-initialized').slick({
 	dots: false,
 	arrows: false,
 	infinite: false,
-	autoplay: true,
+	autoplay: isAutoPlayRelated,
 	speed: 300,
 	slidesToShow: 2,
 	slidesToScroll: 1,
+	responsive: [
+		{
+		  breakpoint: 420,
+		  settings: {
+			slidesToShow: 1
+		  }
+		}
+	  ]
 })
+
+
 $('.slider2').not('.slick-initialized').slick({
 	dots: false,
 	arrows: true,
@@ -183,25 +204,35 @@ $('.slider-promotion-1').not('.slick-initialized').slick({
 	]
 })
 
+var isInfinite = true;
+var isAutoPlay = true;
+var numberItemOnSlide = $('.product-detail--nav .item').length;
+var numberItemConfig = 3;
+
+if (numberItemOnSlide <= numberItemConfig) {
+	isAutoPlay = false
+}
 
 $('.slider-product-detail--for').slick({
 	slidesToShow: 1,
 	slidesToScroll: 1,
 	arrows: false,
 	fade: true,
-	autoplay:true,
 	asNavFor: '.slider-product-detail--nav',
-	infinite: true
-  });
-  $('.slider-product-detail--nav').slick({
-	slidesToShow: 3,
+	autoplay: isAutoPlay,
+	infinite: isInfinite
+});
+
+$('.slider-product-detail--nav').slick({
+	slidesToShow: numberItemConfig,
 	slidesToScroll: 1,
 	asNavFor: '.slider-product-detail--for',
 	dots: false,
 	arrows: false,
-	autoplay:true,
-	infinite: true
-  });
+	focusOnSelect: true,
+	autoplay: isAutoPlay,
+	infinite: isInfinite
+});
 
 
 
@@ -227,9 +258,19 @@ $('.slider-award').not('.slick-initialized').slick({
 			}
 		},
 		{
-			breakpoint: 480,
+			breakpoint: 500,
 			settings: {
 				slidesToShow: 2,
+				slidesToScroll: 1,
+				infinite: true,
+				arrows: false,
+				dots: true
+			}
+		},
+		{
+			breakpoint: 420,
+			settings: {
+				slidesToShow: 1,
 				slidesToScroll: 1,
 				infinite: true,
 				arrows: false,
@@ -478,13 +519,13 @@ $('.addon').click(function () {
 })
 
 
-$(window).on('scroll', function() {
-	
+$(window).on('scroll', function () {
+
 	var temp = $(this).scrollTop();
 
-	if(temp > 260){
+	if (temp > 260) {
 		$('.header').addClass('active-scroll')
-	}else{
+	} else {
 		$('.header').removeClass('active-scroll')
 	}
 });
