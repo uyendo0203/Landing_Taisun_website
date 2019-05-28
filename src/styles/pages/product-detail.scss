@@ -105,9 +105,11 @@
                     text-align: left
                 }
                 .text-hover{
-                    font-size: 6pt;
+                    font-size: 8pt;
+                    // font-size: 6pt;
                     font-family: 'Gotham-Book';
                     color: #7c5723;
+                    font-weight: bold;
                     position: absolute;
                     left: -115px;
                     z-index: 2;
@@ -153,9 +155,8 @@
     &__slider{
         // float: left;
         margin-left: 20px;
-        max-width: 400px;
+        max-width: 500px;
         @media(max-width: 1200px){
-            max-width: 500px;
             margin-left: auto;
             margin-right: auto;
         }
@@ -163,11 +164,15 @@
             .item{
                 text-align: center;
                 cursor: pointer;
+               
                 .image{
-                    max-width: 200px;
+                    max-width: 230px;
                     margin: 0 auto;
+                     display: table;
                 }
                 img{
+                    display: table-cell;
+                        vertical-align: bottom;
                     width: 100%;
                     margin: 0 auto
                 }
@@ -178,6 +183,11 @@
                 cursor: pointer;
                 outline: none;
                 margin:0 20px;
+                display: table;
+                .image{
+                    display: table-cell;
+                    vertical-align: bottom;
+                }
                 &:hover{
                     .image{
                         transform: scale(1.05)
@@ -192,6 +202,7 @@
     &__title{
         width: 100%;
         margin-top: -20px;
+        margin-bottom: 10px;
         @media(max-width: 1200px){
             text-align: center;
         }

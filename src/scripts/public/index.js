@@ -310,11 +310,6 @@ $(document).click(function (e) {
 	$('.header__toggle-icon').removeClass('active')
 })
 
-// $(document).mouseover(function (e) {
-// 	$('.header__nav--product').removeClass('active')
-// 	$('.hover-product').removeClass('active')
-// })
-
 
 
 /** 
@@ -411,6 +406,33 @@ $(document).ready(function () {
 		$(".product-detail .related-left__content .slide-related").height(maxHeight4);
 	}, 1000)
 
+
+	/**----------------------------------------------- */
+	var maxHeight5 = 0;
+
+	$(".taisun_website .product-detail__slider .product-detail--nav .item").each(function () {
+		if ($(this).height() > maxHeight5) {
+			maxHeight5 = $(this).height();
+		}
+	});
+
+	setTimeout(function () {
+		$(".taisun_website .product-detail__slider .product-detail--nav .item").height(maxHeight5);
+	}, 1000)
+
+	/**----------------------------------------------- */
+	var maxHeight6 = 0;
+
+	$(".taisun_website .product-detail__slider .product-detail--for .item").each(function () {
+		if ($(this).height() > maxHeight6) {
+			maxHeight6 = $(this).find('.image').height();
+		}
+	});
+
+	setTimeout(function () {
+		$(".taisun_website .product-detail__slider .product-detail--for .item .image").height(maxHeight6);
+	}, 1000)
+
 });
 
 
@@ -421,6 +443,7 @@ $(document).ready(function () {
 
 $(".popup").click(function () {
 	var $src = $(this).attr("data-url");
+	console.log($src)
 	$(".show-image").fadeIn();
 	$(".img-show iframe").attr("src", $src);
 });

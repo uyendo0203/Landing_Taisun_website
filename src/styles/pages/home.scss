@@ -303,8 +303,53 @@
         max-width: 1300px;
         margin-left: auto;
         margin-right: auto;
+        a{
+            background-image: url('../assets/images/bg-1000days.png');
+            background-repeat: no-repeat;
+            background-size: 100%;
+            display: block;
+            max-height: 100%;
+            min-height: 26.625vw;
+            position: relative;
+        }
         img{
             width: 100%;
+            transition: all 0.5s;
+            
+            &:hover{
+                transform: scale(1.2)
+            }
+            &:nth-child(1){
+                width: 10.8%;
+                position: absolute;
+                left: 5.1488%;
+                top: 44.3925%;
+            
+            }
+            &:nth-child(2){
+                width: 100%;
+                max-width: 11.665%;
+                position: absolute;
+                left: 33.1456%;
+                top: 24.0654%;
+            
+            }
+            &:nth-child(3){
+                width: 100%;
+                max-width: 8.8495%;
+                position: absolute;
+                right: 32.1802%;
+                top: 43.2242%;
+            
+            }
+            &:nth-child(4){
+                width: 100%;
+                max-width: 10.4585%;
+                position: absolute;
+                right: 5.7924%;
+                top: 7.0093%;
+            
+            }
         }
     }
 }

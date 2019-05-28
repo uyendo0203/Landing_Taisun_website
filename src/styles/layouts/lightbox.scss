@@ -10,8 +10,9 @@
 }
   
 .show-image {
-    z-index: 999;
-    display: none; 
+    z-index: 99;
+    display: none;
+    position: relative;
 }
 
 .show-image .overlay {
