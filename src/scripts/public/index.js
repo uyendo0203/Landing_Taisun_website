@@ -293,7 +293,8 @@ $('.header__toggle-icon').click(function (e) {
 	$('.header__content').toggleClass('active');
 
 	if ($(window).width() < 1200) {
-		$('.header__nav--product').addClass('active')
+		$('.header__nav--product').addClass('active');
+		$('.header__nav--promotion').addClass('active')
 	}
 
 })
@@ -304,6 +305,9 @@ $(document).click(function (e) {
 
 	$('.write-evaluate--content').removeClass('active')
 	$('.write-question--content').removeClass('active');
+	$('.hover-product').removeClass('active');
+	$('.header__nav--promotion').removeClass('active')
+	$('.hover-promotion').removeClass('active');
 
 	$('.header__nav--product').removeClass('active')
 	$('.hover-product').removeClass('active')
@@ -504,17 +508,40 @@ $('.hover-product').mouseover(function (e) {
 	e.stopPropagation();
 	$('.header__nav--product').addClass('active')
 	$(this).addClass('active');
+
+	$('.header__nav--promotion').removeClass('active')
+	$('.hover-promotion').removeClass('active');
 })
 $('.header__nav--product').mouseleave(function (e) {
 	e.stopPropagation();
 	$('.hover-product').removeClass('active')
 	$(this).removeClass('active');
 })
-$('.header__bg').mouseover(function (e) {
-	$('.hover-product').removeClass('active')
-	$('.header__nav--product').removeClass('active');
-})
 
+$('.header__bg').mouseover(function (e) {
+	$('.hover-product').removeClass('active')			
+	$('.header__nav--product').removeClass('active');
+	$('.hover-promotion').removeClass('active')
+	$('.header__nav--promotion').removeClass('active');
+})
+/**hover on menu "khuyen mai" */
+$('.hover-promotion').mouseover(function (e) {
+	e.stopPropagation();
+	$('.header__nav--promotion').addClass('active')
+	$(this).addClass('active');
+	$('.header__nav--product').removeClass('active')
+	$('.hover-product').removeClass('active');
+})
+$('.header__nav--promotion').mouseleave(function (e) {
+	e.stopPropagation();
+	$('.hover-promotion').removeClass('active')
+	$(this).removeClass('active');
+})
+$('.header__bg').mouseover(function (e) {
+	$('.hover-promotion').removeClass('active')
+	$('.header__nav--product').removeClass('active');			
+	$('.header__nav--product').removeClass('active');
+})		
 
 /** 
  * Product detail click amount for minus and plus
