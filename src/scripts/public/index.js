@@ -466,19 +466,19 @@ $(document).ready(function () {
 
 
 	/**----------------------------------------------- */
-	var minHeight = $(".banner__slider .item .img")[0].clientHeight;
+	// var minHeight = $(".banner__slider .item .img")[0].clientHeight;
 
-	$(".banner__slider .item .img").each(function () {
-		if ($(this)[0].clientHeight < minHeight) {
-			minHeight = $(this)[0].clientHeight
-		}
-	});
+	// $(".banner__slider .item .img").each(function () {
+	// 	if ($(this)[0].clientHeight < minHeight) {
+	// 		minHeight = $(this)[0].clientHeight
+	// 	}
+	// });
 
-	setTimeout(function(){
-		$(".banner__slider .item .img video").height(minHeight);
-	}, 1000)
+	// setTimeout(function(){
+	// 	$(".banner__slider .item .img video").height(minHeight);
+	// }, 1000)
 
-	document.getElementById('videoAutoplay').play();
+	// document.getElementById('videoAutoplay').play();
 
 });
 

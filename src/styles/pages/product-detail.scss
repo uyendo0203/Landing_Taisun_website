@@ -42,8 +42,10 @@
     
     &__list-function{
         float: left;
+        margin-top: 65px;
         @media(max-width: 1200px){
             display: none;
+            margin-top: 0
         }
         &.mobile{
             @media(max-width: 1200px){
