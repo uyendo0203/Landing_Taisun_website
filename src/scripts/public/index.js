@@ -16,11 +16,11 @@ $('.slider1').not('.slick-initialized').slick({
 /**
  * slider active and autoplay video
  */
-$('.slider1').on('afterChange', function(event, slick, currentSlide, nextSlide){
-	if($('#videoPlay').hasClass('slick-current')){
-		document.getElementById('videoAutoplay').play();
-	}
-});
+// $('.slider1').on('afterChange', function(event, slick, currentSlide, nextSlide){
+// 	if($('#videoPlay').hasClass('slick-current')){
+// 		document.getElementById('videoAutoplay').play();
+// 	}
+// });
 
 
 /**
