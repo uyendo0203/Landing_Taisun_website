@@ -579,11 +579,22 @@ $('.header__nav--promotion').mouseleave(function (e) {
 	$('.hover-promotion').removeClass('active')
 	$(this).removeClass('active');
 })
-$('.header__bg').mouseover(function (e) {
-	$('.hover-promotion').removeClass('active')
-	$('.header__nav--product').removeClass('active');			
+
+
+/**inactive for other item on menu */
+$('.header__nav--item-child li:nth-child(2) a').mouseover(function(){
+	$('.hover-product').removeClass('active')			
 	$('.header__nav--product').removeClass('active');
-})		
+	$('.hover-promotion').removeClass('active')
+	$('.header__nav--promotion').removeClass('active');
+})
+$('.header__nav--item-child li:nth-child(3) a').mouseover(function(){
+	$('.hover-product').removeClass('active')			
+	$('.header__nav--product').removeClass('active');
+	$('.hover-promotion').removeClass('active')
+	$('.header__nav--promotion').removeClass('active');
+})
+	
 
 /** 
  * Product detail click amount for minus and plus
