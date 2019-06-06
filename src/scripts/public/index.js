@@ -399,17 +399,17 @@ $(document).ready(function () {
 	}, 1000);
 
 
-	/**----------------------------------------------- */
-	var maxHeight1 = 0;
-	$(".slider-promotion-1 .item").each(function () {
-		if ($(this).height() > maxHeight1) {
-			maxHeight1 = $(this).height();
-		}
-	});
+	/**--------------slider-promotion-1--------------------------------- */
+	// var maxHeight1 = 0;
+	// $(".slider-promotion-1 .item").each(function () {
+	// 	if ($(this).height() > maxHeight1) {
+	// 		maxHeight1 = $(this).height();
+	// 	}
+	// });
 
-	setTimeout(function () {
-		$(".slider-promotion-1 .item").height(maxHeight1 + 20);
-	}, 1000)
+	// setTimeout(function () {
+	// 	$(".slider-promotion-1 .item").height(maxHeight1 + 20);
+	// }, 1000)
 
 	/**----------------------------------------------- */
 	var maxHeight3 = 0;

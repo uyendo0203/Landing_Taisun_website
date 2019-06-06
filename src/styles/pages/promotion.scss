@@ -95,4 +95,17 @@
             margin-right: 2px;
         }
     }
+
+
+    &__detail{
+        >.post{
+            padding-top: 50px;
+            &::before{
+                top: -46px;
+                @media(max-width: 1200px){
+                    display: none
+                }
+            }
+        }
+    }
 }
