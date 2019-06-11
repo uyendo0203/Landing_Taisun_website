@@ -303,8 +303,9 @@
         max-width: 1300px;
         margin-left: auto;
         margin-right: auto;
-        a{
-            background-image: url('../assets/images/bg-1000days.png');
+        .bg{
+            // background-image: url('../assets/images/bg-1000days.png');
+            background-image: url('../assets/images/bg-1000days-1.jpg');
             background-repeat: no-repeat;
             background-size: 100%;
             display: block;
@@ -314,39 +315,43 @@
         }
         img{
             width: 100%;
+        }
+      
+        a{
+            width: 100%;
             transition: all 0.5s;
             
             &:hover{
-                transform: scale(1.2)
+                transform: scale(1.1)
             }
             &:nth-child(1){
-                width: 10.8%;
+                width: 20%;
                 position: absolute;
                 left: 5.1488%;
-                top: 44.3925%;
+                top: 0;
             
             }
             &:nth-child(2){
-                width: 100%;
-                max-width: 11.665%;
+                max-width: 100%;
+                width: 20%;
                 position: absolute;
-                left: 33.1456%;
-                top: 24.0654%;
+                left:27.5%;                
+                top: 24.0506%;
             
             }
             &:nth-child(3){
                 width: 100%;
-                max-width: 8.8495%;
+                max-width: 20%;
                 position: absolute;
-                right: 32.1802%;
-                top: 43.2242%;
+                right: 25.4166%;
+                top: 0;
             
             }
             &:nth-child(4){
                 width: 100%;
-                max-width: 10.4585%;
+                max-width: 20%;
                 position: absolute;
-                right: 5.7924%;
+                right: 0;
                 top: 7.0093%;
             
             }
