@@ -301,13 +301,7 @@ $('.header__toggle-icon').click(function (e) {
 	e.stopPropagation()
 
 	$(this).toggleClass('active')
-	$('.header__nav').toggleClass('active');
-	$('.header__content').toggleClass('active');
-
-	if ($(window).width() < 1200) {
-		$('.header__nav--product').addClass('active');
-		$('.header__nav--promotion').addClass('active')
-	}
+	$('.header__nav--mobile').toggleClass('active');
 })
 
 $(window).on('scroll', function () {
@@ -328,8 +322,9 @@ $(window).on('scroll', function () {
 
 $(document).click(function (e) {
 
-	$('.header__nav').removeClass('active');
-
+	// $('.header__nav').removeClass('active');
+	// $('.header__toggle-icon').removeClass('active');
+	
 	$('.write-evaluate--content').removeClass('active')
 	$('.write-question--content').removeClass('active');
 	$('.hover-product').removeClass('active');
@@ -338,7 +333,7 @@ $(document).click(function (e) {
 
 	$('.header__nav--product').removeClass('active')
 	$('.hover-product').removeClass('active')
-	$('.header__toggle-icon').removeClass('active')
+	
 })
 
 
