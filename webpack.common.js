@@ -108,8 +108,8 @@ module.exports = {
 				loader: 'file-loader',
 				options:{
 					name: "[name].[hash].[ext]",
-					outputPath: './fonts',
-					publicPath:"../fonts"
+					outputPath: './assets/fonts',
+					publicPath:"../assets/fonts"
 				}
 			  }
 		]
@@ -124,7 +124,7 @@ module.exports = {
 			filename: "./css/[name].bundle.css"
 		}),  
 		new CopyWebpackPlugin([
-			{ from: './src/scripts/public-scripts', to:'./scripts'}
+			{ from: './src/scripts/public-scripts', to:'./js'}
 		]),
     ]
 	.concat(htmlPlugins)

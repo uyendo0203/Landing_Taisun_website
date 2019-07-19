@@ -7,7 +7,7 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
  	devtool: 'source-map',
    	plugins: [
 		new CopyWebpackPlugin([
-			{ from: './src/assets', to:'./'}
+			{ from: './src/assets', to:'./assets'}
 		]),
     	new UglifyJSPlugin({
 			sourceMap: true

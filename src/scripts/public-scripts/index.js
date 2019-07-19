@@ -61,8 +61,8 @@ $('.slider2').not('.slick-initialized').slick({
 	speed: 300,
 	slidesToShow: 4,
 	slidesToScroll: 1,
-	prevArrow: "<button type='button' class='slick-prev pull-left'><img src='./images/arrow-1.png' ></button>",
-	nextArrow: "<button type='button' class='slick-next pull-right'><img src='./images/arrow-2.png'></button>",
+	prevArrow: "<button type='button' class='slick-prev pull-left'><img src='../assets/images/arrow-1.png' ></button>",
+	nextArrow: "<button type='button' class='slick-next pull-right'><img src='../assets/images/arrow-2.png'></button>",
 	responsive: [
 		{
 			breakpoint: 1350,
@@ -103,8 +103,8 @@ $('.slider3').not('.slick-initialized').slick({
 	// autoplay:true,
 	slidesToShow: 3,
 	slidesToScroll: 1,
-	prevArrow: "<button type='button' class='slick-prev pull-left'><img src='./images/arrow-1.png' ></button>",
-	nextArrow: "<button type='button' class='slick-next pull-right'><img src='./images/arrow-2.png'></button>",
+	prevArrow: "<button type='button' class='slick-prev pull-left'><img src='../assets/images/arrow-1.png' ></button>",
+	nextArrow: "<button type='button' class='slick-next pull-right'><img src='../assets/images/arrow-2.png'></button>",
 	responsive: [
 		{
 			breakpoint: 1350,
@@ -146,8 +146,8 @@ $('.slider4').not('.slick-initialized').slick({
 	speed: 300,
 	slidesToShow: 1,
 	slidesToScroll: 1,
-	prevArrow: "<button type='button' class='slick-prev pull-left'><img src='./images/arrow-1.png' ></button>",
-	nextArrow: "<button type='button' class='slick-next pull-right'><img src='./images/arrow-2.png'></button>",
+	prevArrow: "<button type='button' class='slick-prev pull-left'><img src='../assets/images/arrow-1.png' ></button>",
+	nextArrow: "<button type='button' class='slick-next pull-right'><img src='../assets/images/arrow-2.png'></button>",
 	responsive: [
 		{
 			breakpoint: 1350,
@@ -170,8 +170,8 @@ $('.slider-promotion').not('.slick-initialized').slick({
 	speed: 300,
 	slidesToShow: 1,
 	slidesToScroll: 1,
-	prevArrow: "<button type='button' class='slick-prev pull-left'><img src='./images/arrow-1.png' ></button>",
-	nextArrow: "<button type='button' class='slick-next pull-right'><img src='./images/arrow-2.png'></button>",
+	prevArrow: "<button type='button' class='slick-prev pull-left'><img src='../assets/images/arrow-1.png' ></button>",
+	nextArrow: "<button type='button' class='slick-next pull-right'><img src='../assets/images/arrow-2.png'></button>",
 	responsive: [
 		{
 			breakpoint: 768,
@@ -194,8 +194,8 @@ $('.slider-promotion-1').not('.slick-initialized').slick({
 	speed: 300,
 	slidesToShow: 3,
 	slidesToScroll: 1,
-	prevArrow: "<button type='button' class='slick-prev pull-left'><img src='./images/arrow-1.png' ></button>",
-	nextArrow: "<button type='button' class='slick-next pull-right'><img src='./images/arrow-2.png'></button>",
+	prevArrow: "<button type='button' class='slick-prev pull-left'><img src='../assets/images/arrow-1.png' ></button>",
+	nextArrow: "<button type='button' class='slick-next pull-right'><img src='../assets/images/arrow-2.png'></button>",
 	responsive: [
 		{
 			breakpoint: 992,
@@ -258,8 +258,8 @@ $('.slider-award').not('.slick-initialized').slick({
 	speed: 300,
 	slidesToShow: 4,
 	slidesToScroll: 1,
-	prevArrow: "<button type='button' class='slick-prev pull-left'><img src='./images/arrow-1.png' ></button>",
-	nextArrow: "<button type='button' class='slick-next pull-right'><img src='./images/arrow-2.png'></button>",
+	prevArrow: "<button type='button' class='slick-prev pull-left'><img src='../assets/images/arrow-1.png' ></button>",
+	nextArrow: "<button type='button' class='slick-next pull-right'><img src='../assets/images/arrow-2.png'></button>",
 	responsive: [
 		{
 			breakpoint: 992,
