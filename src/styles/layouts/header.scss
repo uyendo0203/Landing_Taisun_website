@@ -453,7 +453,8 @@
                     width: 1px;
                     content: '';
                     background-color:  #7c5723;
-                    top: 50%;
+                    // top: 50%;
+                    top: 0;
                     transform: translateY(-50%);
                     -moz-transform: translateY(-50%);
                     -o-transform: translateY(-50%);
@@ -465,7 +466,8 @@
                 a{
                     font-size: 18px;
                     font-family: 'Roboto-Light';
-                    padding: 15px 18px;
+                    // padding: 15px 18px;
+                    padding: 5px 18px;
                     display: inline-block;
                     color: #7c5723;
                     @media (max-width: 1350px) {
