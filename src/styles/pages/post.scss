@@ -181,11 +181,13 @@
             }
         }
         &--list{
-            
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
         }
         &--item{
             margin-top: 85px;
-            float: left;
+            // float: left;
             width: 50%;
             &:hover{
                 .post__other--image{
@@ -207,6 +209,10 @@
             @media(max-width: 600px){
                 margin-top: 45px;
             }
+            // @media(max-width: 480px){
+            //     padding-left: 10px;
+            //     padding-right: 10px
+            // }
             @media(max-width: 350px){
                float: none;
                width: 100%;
