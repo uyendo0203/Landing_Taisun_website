@@ -541,56 +541,17 @@ $(".write-question--content").click(function (e) {
 
 /** end */
 
-/**hover on menu "san pham" */
-$('.hover-product').mouseover(function (e) {
-	e.stopPropagation();
-	$('.header__nav--product').addClass('active')
-	$(this).addClass('active');
-
-	$('.header__nav--promotion').removeClass('active')
-	$('.hover-promotion').removeClass('active');
+$('.header__nav--item-child a').mouseover(function (e) {
+	let className=  $(this)[0].className;
+	let temp=  className.split('-')[1];
+	if(temp != undefined){
+		console.log(temp);
+		$('.header__data-menu').removeClass('active')
+		$('.header__data-menu[data-menu='+ temp +']').addClass('active')
+	}else{
+		$('.header__data-menu').removeClass('active')
+	}
 })
-$('.header__nav--product').mouseleave(function (e) {
-	e.stopPropagation();
-	$('.hover-product').removeClass('active')
-	$(this).removeClass('active');
-})
-
-$('.header__bg').mouseover(function (e) {
-	$('.hover-product').removeClass('active')			
-	$('.header__nav--product').removeClass('active');
-	$('.hover-promotion').removeClass('active')
-	$('.header__nav--promotion').removeClass('active');
-})
-/**hover on menu "khuyen mai" */
-$('.hover-promotion').mouseover(function (e) {
-	e.stopPropagation();
-	$('.header__nav--promotion').addClass('active')
-	$(this).addClass('active');
-	$('.header__nav--product').removeClass('active')
-	$('.hover-product').removeClass('active');
-})
-$('.header__nav--promotion').mouseleave(function (e) {
-	e.stopPropagation();
-	$('.hover-promotion').removeClass('active')
-	$(this).removeClass('active');
-})
-
-
-/**inactive for other item on menu */
-$('.header__nav--item-child li:nth-child(2) a').mouseover(function(){
-	$('.hover-product').removeClass('active')			
-	$('.header__nav--product').removeClass('active');
-	$('.hover-promotion').removeClass('active')
-	$('.header__nav--promotion').removeClass('active');
-})
-$('.header__nav--item-child li:nth-child(3) a').mouseover(function(){
-	$('.hover-product').removeClass('active')			
-	$('.header__nav--product').removeClass('active');
-	$('.hover-promotion').removeClass('active')
-	$('.header__nav--promotion').removeClass('active');
-})
-	
 
 /** 
  * Product detail click amount for minus and plus
